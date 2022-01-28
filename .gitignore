@@ -1,1 +1,4 @@
 /butter_env
+/butter_env_windows
+*.pyc
+__pycache__

@@ -1,13 +1,12 @@
 from PIL import Image
 from pdf2image import convert_from_bytes
 import pytesseract
-import magic
 
 from io import BytesIO
-import uuid
-import os
 
-import errors
+
+class InvalidPDFFile(Exception):
+    pass
 
 class PDFReader(object):
     def __init__(self, pdf_bytes: bytes) -> None:
@@ -15,14 +14,14 @@ class PDFReader(object):
 
         try:
             self.validate_pdf_bytes()
-        except errors.InvalidPDFFile as e:
-            print(f"Error: {e}")
+        except InvalidPDFFile as e:
+            raise e
 
         self.out_text = self.process_pdf()
 
 
     def validate_pdf_bytes(self):
-        return self._PDF_BYTES and "pdf" in magic.from_buffer(self._PDF_BYTES, mime=True)
+        return self._PDF_BYTES # need to add more validation
 
 
     def process_pdf(self) -> list:

@@ -1,2 +1,0 @@
-class InvalidPDFFile(Exception):
-    pass
