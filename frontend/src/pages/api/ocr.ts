@@ -19,7 +19,10 @@ const ocr = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   // console.log(...Object.values(binaryString));
   // const binaryData = Object.keys(binaryString).join();
 
-  const { data } = await axios.post('http://api.marketsurf.io:6000/ocr', req.body);
+  const { data } = await axios.post(
+    'http://api.marketsurf.io:6000/ocr',
+    req.body,
+  );
 
   console.log(data);
 

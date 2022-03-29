@@ -84,12 +84,15 @@ const FileUploadCard = () => {
       formData.append('file', blob);
 
       // Send a post request to /ocr with the file bytes
-      const { data } = await axios.post('http://api.marketsurf.io:6000/ocr',
-        formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
+      const { data } = await axios.post(
+        'http://api.marketsurf.io:6000/ocr',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         },
-      });
+      );
       documentCreatorContext.setContent(formatData(data.data));
       // console.log(data.data[0]);
       setLoading(false);
