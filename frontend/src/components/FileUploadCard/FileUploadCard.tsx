@@ -85,7 +85,7 @@ const FileUploadCard = () => {
 
       // Send a post request to /ocr with the file bytes
       const { data } = await axios.post(
-        'http://api.marketsurf.io:6000/ocr',
+        'http://api.marketsurf.io:5050/ocr',
         formData,
         {
           headers: {
