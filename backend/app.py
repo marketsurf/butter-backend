@@ -1,4 +1,5 @@
 from flask import Flask, request
+from waitress import serve
 # from rq import Queue
 # from rq.job import Job
 # from worker import conn
@@ -40,4 +41,4 @@ def post_ocr():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    serve(app, listen="*:5000")
