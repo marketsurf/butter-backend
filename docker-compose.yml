@@ -2,6 +2,8 @@ version: "3"
 services:
   backend:
     build: ./backend
+    ports:
+      - "6000:5000"
   frontend:
     build: ./frontend
     ports:
