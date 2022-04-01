@@ -15,6 +15,6 @@ COPY /etc/letsencrypt/live/api.marketsurf.io/privkey.pem ./server.key
 
 COPY . .
 
-CMD [ "gunicorn", "--certfile=server.crt", "--keyfile=server.key", "--bind=0.0.0.0:5050", "app:app" ]
+CMD [ "gunicorn", "--certfile=server.crt", "--keyfile=server.key", "--bind=0.0.0.0:5000", "app:app" ]
 
 EXPOSE 5000
