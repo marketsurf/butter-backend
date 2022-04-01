@@ -10,9 +10,11 @@ RUN apt-get install -y libtesseract-dev
 COPY requirements.txt requirements.txt
 RUN python3 -m pip install -r requirements.txt
 
+COPY /etc/letsencrypt/live/api.marketsurf.io/fullchain.pem ./server.crt
+COPY /etc/letsencrypt/live/api.marketsurf.io/privkey.pem ./server.key
 
 COPY . .
 
-CMD [ "python3" , "app.py"]
+CMD [ "gunicorn", "--certfile=server.crt", "--keyfile=server.key", "--bind=0.0.0.0:5050", "app:app" ]
 
 EXPOSE 5000

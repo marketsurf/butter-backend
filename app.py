@@ -1,11 +1,4 @@
 from flask import Flask, request
-from waitress import serve
-# from rq import Queue
-# from rq.job import Job
-# from worker import conn
-
-# q = Queue(connection=conn)
-
 from ocr.ocr import PDFReader, InvalidPDFFile
 
 def get_words(in_bytes: bytes) -> list:
@@ -45,7 +38,3 @@ def post_ocr():
     return {
         "data": words
     }
-
-
-if __name__ == '__main__':
-    serve(app, listen="*:5000")
