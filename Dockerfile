@@ -10,8 +10,8 @@ RUN apt-get install -y libtesseract-dev
 COPY requirements.txt requirements.txt
 RUN python3 -m pip install -r requirements.txt
 
-ADD /etc/letsencrypt/live/api.marketsurf.io/fullchain.pem ./server.crt
-ADD /etc/letsencrypt/live/api.marketsurf.io/privkey.pem ./server.key
+COPY ../../../etc/letsencrypt/live/api.marketsurf.io/fullchain.pem ./server.crt
+COPY ../../../etc/letsencrypt/live/api.marketsurf.io/privkey.pem ./server.key
 
 COPY . .
 
