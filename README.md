@@ -8,6 +8,8 @@ We also provide a modified version of the open-attestation CLI that allows users
 
 Together, BuTTer and the modified open-attestation CLI provide a handy framework for users to interface with the TradeTrust framework, while enjoying the convenience of optical character recognition instantly recognizing the contents of submitted documents and the speed, reliability and security of the Avalanche network. The other relevant repositories are listed beneath, along with their respective features.
 
+For more in-depth analysis of our project, please see the [project description](https://docs.google.com/document/d/e/2PACX-1vSj3yjnSp50jqJr27PjAKXxeq8gYZORaC2wg6YqlIyVWHnnl52Qp444NI7pm-PsmnMmwoHL9tlhtCJc/pub) here.
+
 ## Components
 
 ### New code
