@@ -1,4 +1,4 @@
-# buTTer
+# BuTTer
 
 ## About
 
@@ -12,21 +12,23 @@ Together, BuTTer and the modified open-attestation CLI provide a handy framework
 
 ### New code
 
-#### [Back-end with OCR (this repository)](https://github.com/marketsurf/butter-backend)
+* #### [Back-end with OCR (this repository)](https://github.com/marketsurf/butter-backend)
 
-#### [Front-end web application](https://github.com/marketsurf/butter-frontend-app)
+* #### [Front-end web application](https://github.com/marketsurf/butter-frontend-app)
 
 ### Forked from existing TradeTrust code, but modified
 
-#### [Modified open-attestation CLI with Avalanche testnet option](https://github.com/marketsurf/open-attestation-cli)
+* #### [Modified open-attestation CLI with Avalanche testnet option](https://github.com/marketsurf/open-attestation-cli)
 
-#### [Modified TradeTrust website with reference to Avalanche testnet](https://github.com/marketsurf/ms-tradetrust-website)
+* #### [Modified TradeTrust website with reference to Avalanche testnet](https://github.com/marketsurf/ms-tradetrust-website)
 
-#### [Modified OpenAttestation Verify](https://github.com/marketsurf/ms-oa-verify)
+* #### [Modified OpenAttestation Verify](https://github.com/marketsurf/ms-oa-verify)
 
-#### [Modified DNSProve](https://github.com/marketsurf/ms-dnsprove)
+* #### [Modified DNSProve](https://github.com/marketsurf/ms-dnsprove)
 
 ## The Team
-[Jared Song](https://jaredmarcsong.com) - OCR Development, Planning, Documents
-[Sebastian Yii](https://sebastianyii.com) - Blockchain, Front-End
-[Zhang Zeyu](https://zeyu2001.com) - DevOps, Video, Back-End
+* [Jared Song](https://jaredmarcsong.com) - OCR Development, Planning, Documents
+
+* [Sebastian Yii](https://sebastianyii.com) - Blockchain, Front-End
+
+* [Zhang Zeyu](https://zeyu2001.com) - DevOps, Video, Back-End
